@@ -17,6 +17,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "node-normalize-scss": "^8.0.1",
     "node-sass": "^4.12.0"
   }
 }

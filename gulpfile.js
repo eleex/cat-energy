@@ -16,7 +16,9 @@ function clear () {
 function styles () {
     return gulp.src('./src/sass/main-page.scss')
                 .pipe(plumber())
-                .pipe(sass().on('error', sass.logError))
+                .pipe(sass({
+                    includePaths: require('node-normalize-scss').includePaths
+                }).on('error', sass.logError))
                 .pipe(sourcemaps.init())
                 .pipe(autoprefixer({
                     overrideBrowserslist: ['> 0.1%'],

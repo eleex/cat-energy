@@ -1,9 +1,4 @@
-body {
-  display: flex;
-  font-size: 36px;
-  color: red;
-}
-
-svg {
-    fill: blueviolet;
-}
+@import "normalize";
+@import "mixins.scss";
+@import "variables.scss";
+@import "scaffolding.scss";
