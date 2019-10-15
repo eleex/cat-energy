@@ -2,3 +2,465 @@
 @import "mixins.scss";
 @import "variables.scss";
 @import "scaffolding.scss";
+
+//HEADER
+.header__logo-wrapper {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: $border-mobile-menu;
+}
+
+.header__picture-logo {
+  display: block;
+  height: 38px;
+}
+
+.header__link-mobile-header {
+  height: 18px;
+  align-self: center;
+}
+
+.header__svg-mobile-header {
+  display: block;
+}
+
+.header__open-menu {
+  @include no-outline;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  align-self: center;
+  border: none;
+  background-image: url("../img/open-mobile-menu.svg");
+  background-repeat: no-repeat;
+}
+
+.header__close-menu {
+  @include no-outline;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  align-self: center;
+  border: none;
+  background-image: url("../img/close-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position-x: 3px;
+}
+
+.navigation__menu {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__list {
+  height: 65px;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: $border-mobile-menu;
+  list-style: none;
+}
+
+.navigation__link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 65px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+//Nutrition
+
+.nutrition {
+  padding: 20px;
+  color: #fff;
+  background-image: url("../img/nutrition-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 305px;
+  text-align: center;
+}
+
+.nutrition__header {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.nutrition__tagline {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+.nutrition__link {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 40px;
+  color: #fff;
+  background-color: $bg-lightgreen;
+  text-transform: uppercase;
+}
+
+// Cat-energy
+
+.cat-energy {
+  margin: 0 20px;
+}
+
+.cat-energy-slim,
+.cat-energy-pro {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: $bg-lightgrey;
+}
+
+.cat-energy-slim__icon,
+.cat-energy-pro__icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $bg-lightgreen;
+}
+
+.cat-energy-slim__icon-svg {
+  position: absolute;
+  display: block;
+  top: -2px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/cat-energy-slim.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cat-energy-pro__icon-svg {
+  position: absolute;
+  display: block;
+  left: calc((50px - 67px) / 2);
+  top: calc((50px - 28px) / 2);
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/cat-energy-pro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cat-energy-slim__header,
+.cat-energy-pro__header {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cat-energy-slim__info,
+.cat-energy-pro__info {
+  margin: 0;
+  padding: 20px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.22px;
+}
+
+.cat-energy-slim__link,
+.cat-energy-pro__link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.cat-energy-slim__link-arrow,
+.cat-energy-pro__link-arrow {
+  display: inline-block;
+  margin-left: 10px;
+  width: 24px;
+  height: 16px;
+  background-image: url("../img/right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+//how-work
+
+.how-work__wrapper {
+  margin: 0 20px;
+}
+
+.how-work__header {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.advantage {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.advantage__img {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: $bg-lightgreen;
+  background-position: center;
+}
+
+.advantage__info {
+  margin: 0 20px;
+  align-self: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $darkgrey;
+}
+
+.advantage__img--beneficial-nutrients {
+  background-image: url("../img/advantage-beneficial-nutrients.png");
+}
+
+.advantage__img--preparation {
+  background-image: url("../img/advantage-preparation.png");
+}
+
+.advantage__img--eat {
+  background-image: url("../img/advantage-eat.png");
+}
+
+.advantage__img--time {
+  background-image: url("../img/advantage-time.png");
+}
+
+//example
+
+.example {
+  background-color: $bg-lightgrey;
+}
+
+.example__wrapper {
+  margin: 0 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.example__header {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.example__info {
+  margin-top: 35px;
+  margin-bottom: 25px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 18px;
+  color: $darkgrey;
+  letter-spacing: 1.2px;
+}
+
+.time-days {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-days__wrapper {
+  position: relative;
+  width: 124px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+}
+
+.time-days__header {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: center;
+}
+
+.time-days__span {
+  position: absolute;
+  display: block;
+  width: 87px;
+  left: 18px;
+  bottom: -12px;
+  font-size: 12px;
+  line-height: 12px;
+  color: $darkgrey;
+  background-color: $bg-lightgrey;
+  text-align: center;
+  z-index: 1;
+}
+
+.time-days__info,
+.time-days__price {
+  margin: 38px 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__cat-wrapper {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.example__cat-before {
+  width: 50%;
+  height: 240px;
+  background-image: url("../img/cat-before-mobile.png");
+}
+
+.example__cat-after {
+  width: 50%;
+  height: 240px;
+  background-image: url("../img/cat-after-mobile.png");
+  background-position-x: 100%;
+}
+
+.example__cat-range-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.example__cat-range-text {
+  align-self: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.example__input-range {
+  margin: 0 15px;
+  width: 84px;
+}
+
+// Address
+
+.address__wrapper {
+  display: flex;
+  margin: 30px 20px;
+}
+
+.address__header,
+.address__info {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.address__info {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 1.2px;
+  color: $darkgrey;
+}
+
+.address__google-map {
+  display: block;
+}
+
+//footer
+
+.footer {
+  background-color: $bg-lightgrey;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+
+.footer__link-logo {
+  margin: 40px auto 30px;
+  line-height: 18px;
+}
+
+.footer__social-network {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.footer__link-social {
+  padding: 20px;
+  line-height: 8px;
+}
+
+.footer__html-academy-wrapper {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.footer__html-academy-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: $darkgrey;
+}
+
+@media (max-width: 767px) and (min-resolution: 144dpi),
+  (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .nutrition {
+    background-image: url("../img/nutrition-background-mobile@2x.jpg");
+  }
+
+  .advantage__img--beneficial-nutrients {
+    background-image: url("../img/advantage-beneficial-nutrients@2x.png");
+    background-size: 50px;
+  }
+  
+  .advantage__img--preparation {
+    background-image: url("../img/advantage-preparation@2x.png");
+    background-size: 50px;
+  }
+  
+  .advantage__img--eat {
+    background-image: url("../img/advantage-eat@2x.png");
+    background-size: 50px;
+  }
+  
+  .advantage__img--time {
+    background-image: url("../img/advantage-time@2x.png");
+    background-size: 50px;
+  }
+
+  .example__cat-before {
+    background-image: url("../img/cat-before-mobile@2x.png");
+    background-size: 280px 240px;
+  }
+  
+  .example__cat-after {
+    background-image: url("../img/after-mobile@2x.png");
+    background-size: 280px 240px;
+  }
+}
