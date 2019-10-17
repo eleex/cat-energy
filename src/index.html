@@ -14,8 +14,8 @@
           <a class="header__link-logo" href="index.html">
             <picture class="header__picture-logo">
               <source type="image/svg+xml" media="(min-width: 1200px)" srcset="">
-              <source type="image/svg+xml" media="(min-width: 768px)" srcset="">
-              <img src="./img/logo-mobile.svg" width="33" height="38" alt="logo">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+              <img class="header__img-logo" src="./img/logo-mobile.svg" width="33" height="38" alt="logo">
             </picture>
           </a>
           <a class="header__link-mobile-header" href="index.html">
@@ -29,7 +29,7 @@
         <nav class="navigation display--none">
           <ul class="navigation__menu">
             <li class="navigation__list">
-              <a class="navigation__link" href="#">Главная</a>
+              <a class="navigation__link active" href="#">Главная</a>
             </li>
             <li class="navigation__list">
               <a class="navigation__link" href="#">Каталог продукции</a>
@@ -73,12 +73,12 @@
         <div class="cat-energy-pro__icon">
           <span class="cat-energy-pro__icon-svg"></span>
         </div>
-        <h2 class="cat-energy-pro__header">Похудение</h2>
-        <p class="cat-energy-pro__info">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? 
-          Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+        <h2 class="cat-energy-pro__header">Набор массы</h2>
+        <p class="cat-energy-pro__info">Заработать авторитет среди дворовых котов и даже собак?
+          Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
         </p>
         <a class="cat-energy-pro__link" href="#">
-          Каталог Slim
+          Каталог Pro
           <span class="cat-energy-pro__link-arrow"></span>
         </a>
       </div>
@@ -157,26 +157,24 @@
         </a>
         <div class="footer__social-network">
           <a class="footer__link-social" href="#">
-            <svg class="footer__svg-vk" width="22" height="12" fill="#444">
+            <svg class="footer__svg-social" width="22" height="12" fill="#444">
               <use xlink:href="./img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
           <a class="footer__link-social" href="#">    
-            <svg width="16" height="16" fill="#444">
+            <svg class="footer__svg-social" width="16" height="16" fill="#444">
               <use xlink:href="./img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
           <a class="footer__link-social" href="#">
-            <svg width="10" height="19" fill="#444">
+            <svg class="footer__svg-social" width="10" height="19" fill="#444">
               <use xlink:href="./img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </div>
         <div class="footer__html-academy-wrapper">
-          <a class="footer__html-academy-link" href="#">
-            <p class="footer__html-academy-text">HTML Academy</p>
-          </a>
-          <a href="#">
+          <a class="footer__html-academy-link" href="#">HTML Academy</a>
+          <a class="footer__html-academy-logo-link" href="#">
             <svg class="footer__html-academy-svg" width="27" height="34" fill="#444">
               <use xlink:href="./img/sprite.svg#icon-html-academy"></use>
             </svg>
