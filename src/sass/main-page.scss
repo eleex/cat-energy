@@ -2,6 +2,7 @@
 @import "mixins.scss";
 @import "variables.scss";
 @import "scaffolding.scss";
+@import "styleguide.scss";
 
 //HEADER
 .header__logo-wrapper {
@@ -66,7 +67,7 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 65px;
-  color: #000;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -74,7 +75,7 @@
 
 .nutrition {
   padding: 20px;
-  color: #fff;
+  color: $white;
   background-image: url("../img/nutrition-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% 305px;
@@ -100,7 +101,7 @@
   margin: 0 auto;
   font-size: 14px;
   line-height: 40px;
-  color: #fff;
+  color: $white;
   background-color: $bg-lightgreen;
   text-transform: uppercase;
 }
@@ -177,7 +178,7 @@
   margin-top: 16px;
   font-size: 16px;
   line-height: 16px;
-  color: #000;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -188,6 +189,7 @@
   width: 24px;
   height: 16px;
   background-image: url("../img/right-arrow-long.svg");
+  background-size: 24px 11px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -460,7 +462,7 @@
   }
   
   .example__cat-after {
-    background-image: url("../img/after-mobile@2x.png");
+    background-image: url("../img/cat-after-mobile@2x.png");
     background-size: 280px 240px;
   }
 }

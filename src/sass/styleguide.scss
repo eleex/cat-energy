@@ -1,0 +1,40 @@
+.header__link-logo:hover,
+.header__link-mobile-header:hover,
+.navigation__link:hover{
+    opacity: 0.8;
+}
+.header__link-logo:active,
+.header__link-mobile-header:active,
+.navigation__link:active{
+    opacity: 0.6;
+}
+
+.nutrition__link:hover{
+    background-color: $bg-lightgreen-hover;
+}
+
+.nutrition__link:active .nutrition__span{
+    opacity: 0.3;
+}
+
+.cat-energy-slim__link:hover .cat-energy-slim__link-arrow{
+//   display: inline-block;
+//   margin-left: 10px;
+//   width: 33px;
+//   height: 16px;
+  background-image: url("../img/right-arrow-long.svg");
+  background-size: 33px 11px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.my-arrow{
+  display: inline-block;
+  margin-left: 10px;
+  width: 33px;
+  height: 11px;
+  background-image: url("../img/right-arrow-long.svg");
+//   background-size: 33px 11px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
