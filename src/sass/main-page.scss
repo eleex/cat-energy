@@ -72,11 +72,15 @@
 //Nutrition
 
 .nutrition {
-  padding: 20px;
-  color: $white;
   background-image: url("../img/nutrition-background-mobile.jpg");
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100% 305px;
+  background-size: 320px 305px;
+}
+
+.nutrition__wrapper{
+  margin: 0 20px;
+  color: $white;
   text-align: center;
 }
 
@@ -92,6 +96,7 @@
   margin-bottom: 25px;
   font-size: 14px;
   letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .nutrition__link {
@@ -106,7 +111,7 @@
 
 // Cat-energy
 
-.cat-energy {
+.cat-energy__wrapper {
   margin: 0 20px;
 }
 
@@ -427,6 +432,10 @@
   color: $darkgrey;
 }
 
+@media (max-width: 767px) {
+
+}
+
 @media (max-width: 767px) and (min-resolution: 144dpi),
   (max-width: 767px) and (min-resolution: 1.5dppx) {
   .nutrition {
@@ -464,19 +473,12 @@
   }
 }
 
-@media (max-width: 767px) {
-
-}
-
 @media (min-width: 768px) {
-  body{
-    width: 768px;
-    margin: 0 auto;
-  }
-
   .header {
     display: flex;
-    margin: 0 30px;
+    width: 708px;
+    margin: 24px auto;
+    justify-content: space-between;
   }
 
   .header__logo-wrapper{
@@ -497,30 +499,72 @@
 
   .navigation {
     display: block;
-    margin-left: 95px;
-    flex-grow: 1;
     align-self: center;
   }
 
   .navigation__menu {
     display: flex;
-    justify-content: space-between;
   }
 
   .navigation__list {
+    margin-left: 35px;
     border-bottom: none;
   }
 
   .navigation__link{
     display: block;
-    padding-top: 6px;
+    padding-top: 4px;
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
-    box-sizing: border-box;
   }
 
   .navigation__link.active{
     border-bottom: 2px solid $bg-lightgreen;
+  }
+
+  //nutrition
+  .nutrition {
+    background-image: none;
+  }
+
+  .nutrition__wrapper{
+    position: relative;
+    width: 708px;
+    margin: 0 auto;
+    padding-left: 90px;
+    padding-bottom: 527px;
+    box-sizing: border-box;
+    color: $black;
+    text-align: left;
+  }
+  
+  .nutrition__header {
+    padding: 35px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  
+  .nutrition__tagline {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .nutrition__img{
+    position: absolute;
+    top: 240px;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .nutrition__link {
+    width: 245px;
+    height: 52px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 52px;
+    text-align: center;
   }
 }

@@ -44,43 +44,49 @@
     <section class="nutrition">
       <div class="nutrition__wrapper">
         <h2 class="nutrition__header">
-          Функциональное питание для котов
+          Функциональное<br> питание для котов
         </h2>
         <p class="nutrition__tagline">
           Занялся собой? Займись котом!
         </p>
-        <img src="./img/cat-energy-mobile.png" srcset="./img/cat-energy-mobile@2x.png 2x" alt="Cat-energy">
+        <picture class="nutrition__picture">
+          <source type="image/jpg" media="(min-width: 1200px)" srcset="">
+          <source type="image/jpg" media="(min-width: 768px)" srcset="./img/cat-energy-tablet.jpg 1x, ./img/cat-energy-tablet@2x.jpg 2x">
+          <img class="nutrition__img" src="./img/cat-energy-mobile.png" srcset="./img/cat-energy-mobile@2x.png 2x" alt="Cat-energy">
+        </picture>
+        <a class="nutrition__link" href="#">
+          <span class="nutrition__span">Подобрать программу</span>
+        </a>
       </div>
-      <a class="nutrition__link" href="#">
-        <span class="nutrition__span">Подобрать программу</span>
-      </a>
     </section>
     <section class="cat-energy">
-      <div class="cat-energy-slim">
-        <div class="cat-energy-slim__icon">
-          <span class="cat-energy-slim__icon-svg"></span>
+      <div class="cat-energy__wrapper">
+        <div class="cat-energy-slim">
+          <div class="cat-energy-slim__icon">
+            <span class="cat-energy-slim__icon-svg"></span>
+          </div>
+          <h2 class="cat-energy-slim__header">Похудение</h2>
+          <p class="cat-energy-slim__info">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? 
+            Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <a class="cat-energy-slim__link" href="#">
+            Каталог Slim
+            <span class="cat-energy-slim__link-arrow"></span>
+          </a>
         </div>
-        <h2 class="cat-energy-slim__header">Похудение</h2>
-        <p class="cat-energy-slim__info">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? 
-          Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-        </p>
-        <a class="cat-energy-slim__link" href="#">
-          Каталог Slim
-          <span class="cat-energy-slim__link-arrow"></span>
-        </a>
-      </div>
-      <div class="cat-energy-pro">
-        <div class="cat-energy-pro__icon">
-          <span class="cat-energy-pro__icon-svg"></span>
+        <div class="cat-energy-pro">
+          <div class="cat-energy-pro__icon">
+            <span class="cat-energy-pro__icon-svg"></span>
+          </div>
+          <h2 class="cat-energy-pro__header">Набор массы</h2>
+          <p class="cat-energy-pro__info">Заработать авторитет среди дворовых котов и даже собак?
+            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          </p>
+          <a class="cat-energy-pro__link" href="#">
+            Каталог Pro
+            <span class="cat-energy-pro__link-arrow"></span>
+          </a>
         </div>
-        <h2 class="cat-energy-pro__header">Набор массы</h2>
-        <p class="cat-energy-pro__info">Заработать авторитет среди дворовых котов и даже собак?
-          Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-        </p>
-        <a class="cat-energy-pro__link" href="#">
-          Каталог Pro
-          <span class="cat-energy-pro__link-arrow"></span>
-        </a>
       </div>
     </section>
     <section class="how-work">
