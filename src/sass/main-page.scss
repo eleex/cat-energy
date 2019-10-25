@@ -14,7 +14,7 @@
   border-bottom: $border-mobile-menu;
 }
 
-.header__img-logo{
+.header__img-logo {
   display: block;
 }
 
@@ -78,7 +78,7 @@
   background-size: 320px 305px;
 }
 
-.nutrition__wrapper{
+.nutrition__wrapper {
   margin: 0 20px;
   color: $white;
   text-align: center;
@@ -101,7 +101,7 @@
 
 .nutrition__link {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   font-size: 14px;
   line-height: 40px;
   color: $white;
@@ -222,6 +222,8 @@
   flex-shrink: 0;
   background-color: $bg-lightgreen;
   background-position: center;
+  background-size: 50px;
+  background-repeat: no-repeat;
 }
 
 .advantage__info {
@@ -433,7 +435,9 @@
 }
 
 @media (max-width: 767px) {
-
+  .advantage__number {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) and (min-resolution: 144dpi),
@@ -444,29 +448,25 @@
 
   .advantage__img--beneficial-nutrients {
     background-image: url("../img/advantage-beneficial-nutrients@2x.png");
-    background-size: 50px;
   }
-  
+
   .advantage__img--preparation {
     background-image: url("../img/advantage-preparation@2x.png");
-    background-size: 50px;
   }
-  
+
   .advantage__img--eat {
     background-image: url("../img/advantage-eat@2x.png");
-    background-size: 50px;
   }
-  
+
   .advantage__img--time {
     background-image: url("../img/advantage-time@2x.png");
-    background-size: 50px;
   }
 
   .example__cat-before {
     background-image: url("../img/cat-before-mobile@2x.png");
     background-size: 280px 240px;
   }
-  
+
   .example__cat-after {
     background-image: url("../img/cat-after-mobile@2x.png");
     background-size: 280px 240px;
@@ -481,7 +481,7 @@
     justify-content: space-between;
   }
 
-  .header__logo-wrapper{
+  .header__logo-wrapper {
     padding: 0;
     border: none;
   }
@@ -491,7 +491,7 @@
     display: none;
   }
 
-  .header__img-logo{
+  .header__img-logo {
     display: block;
     width: 173px;
     height: 58px;
@@ -511,7 +511,7 @@
     border-bottom: none;
   }
 
-  .navigation__link{
+  .navigation__link {
     display: block;
     padding-top: 4px;
     font-size: 18px;
@@ -519,7 +519,7 @@
     font-weight: 400;
   }
 
-  .navigation__link.active{
+  .navigation__link.active {
     border-bottom: 2px solid $bg-lightgreen;
   }
 
@@ -528,7 +528,7 @@
     background-image: none;
   }
 
-  .nutrition__wrapper{
+  .nutrition__wrapper {
     position: relative;
     width: 708px;
     margin: 0 auto;
@@ -538,13 +538,13 @@
     color: $black;
     text-align: left;
   }
-  
+
   .nutrition__header {
     padding: 35px 0;
     font-size: 60px;
     line-height: 60px;
   }
-  
+
   .nutrition__tagline {
     margin-top: 10px;
     margin-bottom: 50px;
@@ -552,13 +552,13 @@
     line-height: 20px;
   }
 
-  .nutrition__img{
+  .nutrition__img {
     position: absolute;
     top: 240px;
     left: 0;
     z-index: -1;
   }
-  
+
   .nutrition__link {
     width: 245px;
     height: 52px;
@@ -567,4 +567,123 @@
     line-height: 52px;
     text-align: center;
   }
+
+  //cat-energy
+
+  .cat-energy__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .cat-energy-slim,
+  .cat-energy-pro {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 280px;
+  }
+
+  .cat-energy-slim__icon,
+  .cat-energy-pro__icon {
+    top: 90px;
+    right: 60px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .cat-energy-slim__icon-svg {
+    top: -12px;
+    left: 30px;
+    width: 140px;
+    height: 194px;
+  }
+
+  .cat-energy-pro__icon-svg {
+    top: 44px;
+    left: -34px;
+    width: 268px;
+    height: 112px;
+  }
+
+  .cat-energy-slim__header,
+  .cat-energy-pro__header {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  .cat-energy-slim__info,
+  .cat-energy-pro__info {
+    padding: 25px 0 60px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  .cat-energy-slim__link,
+  .cat-energy-pro__link {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .cat-energy-slim__link-arrow,
+  .cat-energy-pro__link-arrow {
+    margin-left: 20px;
+    height: 20px;
+  }
+
+  //how-work
+  .how-work__wrapper{
+    display: flex;
+    width: 708px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .how-work__header{
+    margin-top: 25px;
+    margin-bottom: 40px;
+    flex-basis: 100%;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  
+  .advantage{
+    position: relative;
+    flex-basis: 50%;
+    margin-top: 30px;
+    margin-bottom: 105px; //30px
+    padding-right: 90px;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .advantage__img{
+    width: 80px;
+    height: 80px;
+  }
+
+  .advantage__info{
+    margin: 0;
+    margin-top: 35px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.9px;
+  }
+
+  .advantage__number{
+    position: absolute;
+    display: block;
+    top: -40px;
+    left: 125px;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  //example
 }
