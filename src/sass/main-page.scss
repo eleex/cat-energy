@@ -365,7 +365,12 @@
 
 .address__wrapper {
   display: flex;
+  justify-content: space-between;
   margin: 30px 20px;
+}
+
+.address__header{
+  text-transform: uppercase;
 }
 
 .address__header,
@@ -377,11 +382,9 @@
 }
 
 .address__info {
-  font-size: 16px;
-  font-weight: 400;
+  display: flex;
+  flex-direction: column;
   font-style: normal;
-  line-height: 20px;
-  letter-spacing: 1.2px;
   color: $darkgrey;
 }
 
@@ -635,22 +638,22 @@
   }
 
   //how-work
-  .how-work__wrapper{
+  .how-work__wrapper {
     display: flex;
     width: 708px;
     margin: 0 auto;
     flex-wrap: wrap;
   }
 
-  .how-work__header{
+  .how-work__header {
     margin-top: 25px;
     margin-bottom: 40px;
     flex-basis: 100%;
     font-size: 60px;
     line-height: 60px;
   }
-  
-  .advantage{
+
+  .advantage {
     position: relative;
     flex-basis: 50%;
     margin-top: 30px;
@@ -660,12 +663,12 @@
     box-sizing: border-box;
   }
 
-  .advantage__img{
+  .advantage__img {
     width: 80px;
     height: 80px;
   }
 
-  .advantage__info{
+  .advantage__info {
     margin: 0;
     margin-top: 35px;
     font-size: 16px;
@@ -673,7 +676,7 @@
     letter-spacing: 1.9px;
   }
 
-  .advantage__number{
+  .advantage__number {
     position: absolute;
     display: block;
     top: -40px;
@@ -686,4 +689,72 @@
   }
 
   //example
+
+  //address
+  .address__wrapper{
+    width: 708px;
+    margin: 65px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  .address__header{
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .address__city{
+    margin-top: auto;
+  }
+
+  .address__google-map {
+    height: 396px;
+  }
+
+  //footer
+  .footer__wrapper{
+    width: 708px;
+    margin: 0 auto;
+    padding: 58px 0;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .footer__link-logo{
+    margin: 0;
+    align-self: center;
+  }
+
+  .footer__social-network{
+    width: auto;
+    border: none;
+  }
+
+  .footer__link-social{
+    padding: 0 15px;
+  }
+
+  .footer__svg-vk{
+    width: 30px;
+    height: 16px;
+  }
+
+  .footer__svg-instagram{
+    width: 23px;
+    height: 23px;
+  }
+
+  .footer__svg-facebook{
+    width: 14px;
+    height: 28px;
+  }
+
+  .footer__html-academy-wrapper{
+    padding: 0;
+    flex-grow: 0;
+  }
+
+  .footer__html-academy-logo-link{
+    padding-left: 23px;
+  }
 }
