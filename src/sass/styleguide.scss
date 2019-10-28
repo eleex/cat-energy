@@ -35,3 +35,14 @@
 .footer__html-academy-logo-link:hover .footer__html-academy-svg{
   fill: $bg-lightgreen;
 }
+
+@media (min-width: 768px) {
+  .footer__html-academy-wrapper:active .footer__html-academy-svg,
+  .footer__html-academy-wrapper:active .footer__html-academy-link {
+    opacity: 0.3;
+  }
+
+  .footer__html-academy-wrapper:hover .footer__html-academy-svg {
+    fill: $bg-lightgreen;
+  }
+}
