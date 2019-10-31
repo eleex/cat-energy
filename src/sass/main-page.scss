@@ -164,15 +164,22 @@
   text-transform: uppercase;
 }
 
+.cat-energy-pro__header{
+  margin-left: 40px;
+}
+
 .cat-energy-slim__info,
 .cat-energy-pro__info {
   margin: 0;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
   border-bottom: 1px solid #d9d9d9;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 1.22px;
+  color: #444;
 }
 
 .cat-energy-slim__link,
@@ -201,6 +208,7 @@
 
 .how-work__wrapper {
   margin: 0 20px;
+  padding-bottom: 20px;
 }
 
 .how-work__header {
@@ -288,7 +296,8 @@
 .time-days__wrapper {
   position: relative;
   width: 124px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
   box-sizing: border-box;
 }
 
@@ -616,6 +625,7 @@
 
   .cat-energy-slim__header,
   .cat-energy-pro__header {
+    margin-left: 0;
     font-size: 36px;
     line-height: 36px;
     text-align: left;
@@ -647,6 +657,7 @@
     display: flex;
     width: 708px;
     margin: 0 auto;
+    padding-bottom: 0;
     flex-wrap: wrap;
   }
 
@@ -720,6 +731,11 @@
     z-index: 1;
   }
 
+  .example__text-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .example__header {
     font-size: 60px;
     line-height: 60px;
@@ -728,6 +744,7 @@
   .example__info {
     margin-top: 60px;
     margin-bottom: 60px;
+    padding-right: 60px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -791,13 +808,13 @@
   .example__cat-before {
     width: 50%;
     height: 517px;
-    background-image: url("../img/cat-before-desktop.png");
+    background-image: url("../img/cat-before-tablet.png");
   }
 
   .example__cat-after {
     width: 50%;
     height: 517px;
-    background-image: url("../img/cat-after-desktop.png");
+    background-image: url("../img/cat-after-tablet.png");
   }
 
   .example__cat-range-wrapper {
@@ -902,60 +919,31 @@
   }
 
   .example__cat-before {
-    background-image: url("../img/cat-before-desktop@2x.png");
+    background-image: url("../img/cat-before-tablet@2x.png");
     background-size: 690px 517px;
   }
 
   .example__cat-after {
-    background-image: url("../img/cat-after-desktop@2x.png");
+    background-image: url("../img/cat-after-tablet@2x.png");
     background-size: 690px 517px;
   }
 }
 
 @media (min-width: 1440px) {
   .header {
-    //   display: flex;
     width: 1220px;
     margin: 0 auto;
     padding: 54px 0 30px;
-    //   justify-content: space-between;
   }
 
-  // .header__logo-wrapper {
-  //   padding: 0;
-  //   border: none;
-  // }
-
-  // .header__link-mobile-header,
-  // .header__open-menu {
-  //   display: none;
-  // }
-
   .header__img-logo {
-    // display: block;
     width: 202px;
     height: 59px;
   }
-  // .navigation {
-  //   display: block;
-  //   align-self: center;
-  // }
-
-  // .navigation__menu {
-  //   display: flex;
-  // }
-
-  // .navigation__list {
-  //   margin-left: 35px;
-  //   border-bottom: none;
-  // }
 
   .navigation__link {
-    // display: block;
-    // padding-top: 4px;
     font-size: 20px;
     line-height: 36px;
-    // font-weight: 400;
     color: #fff;
   }
 
@@ -975,52 +963,30 @@
   }
 
   .nutrition__wrapper {
-    // position: relative;
     width: 1220px;
-    // margin: 0 auto;
     padding-left: 80px;
     padding-bottom: 268px;
-    // box-sizing: border-box;
-    // color: $black;
-    // text-align: left;
   }
 
   .nutrition__header {
     padding: 70px 0 35px;
-    // font-size: 60px;
-    // line-height: 60px;
   }
 
   .nutrition__tagline {
     margin-top: 0;
-    // margin-bottom: 50px;
-    // font-size: 20px;
-    // line-height: 20px;
   }
 
   .nutrition__img {
-    // position: absolute;
     top: 0;
     left: 450px;
     z-index: 1;
   }
 
-  // .nutrition__link {
-  //   width: 245px;
-  //   height: 52px;
-  //   margin: 0;
-  //   font-size: 20px;
-  //   line-height: 52px;
-  //   text-align: center;
-  // }
-
   //cat-energy
-
   .cat-energy__wrapper {
     display: flex;
     width: 1220px;
     justify-content: space-between;
-    // margin: 0 auto;
   }
 
   .cat-energy-slim,
@@ -1029,10 +995,6 @@
     margin: 0;
     padding-right: 50px;
     box-sizing: border-box;
-    // position: relative;
-    // padding-top: 80px;
-    // padding-bottom: 60px;
-    // padding-left: 50px;
   }
 
   .cat-energy-slim__icon,
@@ -1059,129 +1021,146 @@
 
   .cat-energy-slim__header,
   .cat-energy-pro__header {
-    // font-size: 36px;
-    // line-height: 36px;
     text-align: center;
   }
 
   .cat-energy-slim__info,
   .cat-energy-pro__info {
     padding: 70px 0 30px;
-    // font-size: 16px;
-    // line-height: 24px;
-    // border: none;
   }
-
-  // .cat-energy-slim__link,
-  // .cat-energy-pro__link {
-  //   margin: 0;
-  //   font-size: 20px;
-  //   line-height: 20px;
-  // }
-
-  // .cat-energy-slim__link-arrow,
-  // .cat-energy-pro__link-arrow {
-  //   margin-left: 20px;
-  //   height: 20px;
-  // }
 
   //how-work
   .how-work__wrapper {
-    // display: flex;
     width: 1220px;
-    // margin: 0 auto;
-    // flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .how-work__header {
     margin-top: 75px;
     margin-bottom: 70px;
-    // flex-basis: 100%;
-    // font-size: 60px;
-    // line-height: 60px;
   }
 
   .advantage {
-    //   position: relative;
     flex-basis: 245px;
     margin-top: 0;
     margin-bottom: 75px;
     padding-right: 0;
-    //   flex-direction: column;
-    //   box-sizing: border-box;
   }
 
-  // .advantage__img {
-  //   width: 80px;
-  //   height: 80px;
-  // }
-
   .advantage__info {
-    // margin: 0;
-    // margin-top: 35px;
-    // font-size: 16px;
-    // line-height: 24px;
     letter-spacing: 1.5px;
   }
 
-  // .advantage__number {
-  //   position: absolute;
-  //   display: block;
-  //   top: -40px;
-  //   left: 125px;
-  //   font-size: 281px;
-  //   line-height: 281px;
-  //   color: #f2f2f2;
-  //   overflow: hidden;
-  //   z-index: -1;
-  // }
-
-  //address
-  .address {
-    position: relative;
-    height: 400px;
+  //example
+  .example {
+    border-top: none;
   }
 
+  .example__background {
+    height: 190px;
+  }
+
+  .example__wrapper {
+    flex-wrap: nowrap;
+    width: 1220px;
+    padding: 0;
+    padding-bottom: 65px;
+  }
+
+  .example__text-wrapper{
+    flex-basis: 50%;
+  }
+
+  .example__header {
+    line-height: 190px;
+  }
+
+  .example__info {
+    margin: 70px 0;
+    padding-right: 195px;
+  }
+
+  .time-days__text {
+    background-color: #f2f2f2;
+  }
+
+  .time-days__info {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    margin-top: 45px;
+    line-height: 48px;
+  }
+
+  .time-days__price {
+    margin-left: 70px;
+  }
+
+  .example__cat-wrapper {
+    margin-top: 0;
+    flex-basis: 50%;
+  }
+
+  .example__cat-before {
+    background-image: url("../img/cat-before-desktop.png");
+  }
+
+  .example__cat-after {
+    background-image: url("../img/cat-after-desktop.png");
+  }
+
+  //address
   .address__wrapper {
     position: relative;
     width: 1220px;
     margin: 0 auto;
     padding: 0;
-    top: 100px;
-    justify-content: start;
-    box-sizing: border-box;
-    z-index: 1;
   }
 
   .address__header {
-    width: 325px;
+    position: absolute;
+    display: flex;
+    width: 285px;
     height: 200px;
-    padding-top: 65px;
-    padding-right: 80px;
+    top: 100px;
     padding-left: 75px;
-    // align-self: center;
-    // font-size: 20px;
-    // line-height: 25px;
+    align-items: center;
     box-sizing: border-box;
     background-color: #fff;
   }
 
-  .address__info {
-    width: 245px;
+  .address__info{
+    position: absolute;
+    width: 285px;
     height: 200px;
-    padding-top: 65px;
-    background-color: #fff;
+    top: 100px;
+    left: 285px;
+    justify-content: center;
+    padding-left: 40px;
     box-sizing: border-box;
+    background-color: #fff;
   }
 
   .address__city {
-    margin-top: 15px;
+    margin-top: 14px;
   }
 
-  .address__google-map {
-    position: absolute;
-    top: 0;
-    // height: 400px;
+  //footer
+  .footer__wrapper {
+    width: 1220px;
+  }
+}
+
+@media (min-width: 1440px) and (min-resolution: 144dpi),
+  (min-width: 1440px) and (min-resolution: 1.5dppx) {
+  .example__cat-before {
+    background-image: url("../img/cat-before-desktop@2x.png");
+    background-size: 610px 517px;
+  }
+
+  .example__cat-after {
+    background-image: url("../img/cat-after-desktop@2x.png");
+    background-size: 610px 517px;
   }
 }
