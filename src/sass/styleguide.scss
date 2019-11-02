@@ -1,14 +1,14 @@
 .header__link-logo:hover,
 .header__link-mobile-header:hover,
 .navigation__link:hover,
-.footer__link-logo:hover{
-    opacity: 0.8;
+.footer__link-logo:hover {
+  opacity: 0.8;
 }
 .header__link-logo:active,
 .header__link-mobile-header:active,
 .navigation__link:active,
-.footer__link-logo:active{
-    opacity: 0.6;
+.footer__link-logo:active {
+  opacity: 0.6;
 }
 
 .nutrition__link:active .nutrition__span,
@@ -16,24 +16,40 @@
 .cat-energy-pro__link:active,
 .footer__link-social:active .footer__svg-social,
 .footer__html-academy-logo-link:active .footer__html-academy-svg,
-.footer__html-academy-link:active{
-    opacity: 0.3;
+.footer__html-academy-link:active {
+  opacity: 0.3;
 }
 
-.nutrition__link:hover{
-    background-color: $bg-lightgreen-hover;
+.nutrition__link:hover {
+  background-color: $bg-lightgreen-hover;
 }
 
 .cat-energy-slim__link:hover .cat-energy-slim__link-arrow,
-.cat-energy-pro__link:hover .cat-energy-pro__link-arrow{
+.cat-energy-pro__link:hover .cat-energy-pro__link-arrow {
   width: 33px;
   background-image: url("../img/right-arrow-verylong.svg");
   background-size: 33px 11px;
 }
 
 .footer__link-social:hover .footer__svg-social,
-.footer__html-academy-logo-link:hover .footer__html-academy-svg{
+.footer__html-academy-logo-link:hover .footer__html-academy-svg {
   fill: $bg-lightgreen;
+}
+
+.example__input-range:hover::-webkit-slider-thumb {
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.example__input-range:hover::-moz-range-thumb {
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.example__input-range:active::-webkit-slider-thumb {
+  border: 2px solid #68b738;
+}
+
+.example__input-range:active::-moz-range-thumb {
+  border: 2px solid #68b738;
 }
 
 @media (min-width: 768px) {
