@@ -1,0 +1,127 @@
+.nutrition {
+  background-image: url("../img/nutrition-background-mobile.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 320px 305px;
+}
+
+.nutrition__wrapper {
+  margin: 0 20px;
+  padding-top: 25px;
+  color: $white;
+  text-align: center;
+}
+
+.nutrition__header {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.nutrition__tagline {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nutrition__picture {
+  display: block;
+}
+
+.nutrition__link {
+  display: block;
+  margin: 0 auto 20px;
+  font-size: 14px;
+  line-height: 40px;
+  color: $white;
+  background-color: $bg-lightgreen;
+  text-transform: uppercase;
+}
+
+@media (max-width: $mobile-width-only) and (min-resolution: $retina-dpi),
+  (max-width: $mobile-width-only) and (min-resolution: $retina-dppx) {
+  .nutrition {
+    background-image: url("../img/nutrition-background-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition {
+    background-image: none;
+  }
+
+  .nutrition__wrapper {
+    position: relative;
+    width: 708px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-left: 90px;
+    padding-bottom: 527px;
+    box-sizing: border-box;
+    color: $black;
+    text-align: left;
+  }
+
+  .nutrition__header {
+    padding: 35px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .nutrition__tagline {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .nutrition__img {
+    position: absolute;
+    top: 240px;
+    left: 0;
+    z-index: -1;
+  }
+
+  .nutrition__link {
+    width: 245px;
+    height: 52px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 52px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition {
+    width: 1440px;
+    margin: -143px auto 0;
+    padding-top: 143px;
+    background-image: url("../img/nutrition-background-desktop.jpg");
+    background-size: 720px 696px;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  .nutrition__wrapper {
+    width: 1220px;
+    padding-left: 80px;
+    padding-bottom: 268px;
+  }
+
+  .nutrition__header {
+    padding: 70px 0 35px;
+  }
+
+  .nutrition__tagline {
+    margin-top: 0;
+  }
+
+  .nutrition__img {
+    top: 0;
+    left: 450px;
+    z-index: 1;
+  }
+}

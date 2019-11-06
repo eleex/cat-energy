@@ -1,0 +1,172 @@
+.how-work__wrapper {
+  margin: 0 20px;
+  padding-bottom: 20px;
+}
+
+.how-work__header {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.advantage {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.advantage__img {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: $bg-lightgreen;
+  background-position: center;
+  background-size: 50px;
+  background-repeat: no-repeat;
+}
+
+.advantage__info {
+  margin: 0 20px;
+  align-self: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $darkgrey;
+}
+
+.advantage__img--beneficial-nutrients {
+  background-image: url("../img/advantage-beneficial-nutrients.png");
+}
+
+.advantage__img--preparation {
+  background-image: url("../img/advantage-preparation.png");
+}
+
+.advantage__img--eat {
+  background-image: url("../img/advantage-eat.png");
+}
+
+.advantage__img--time {
+  background-image: url("../img/advantage-time.png");
+}
+
+@media (max-width: $mobile-width-only) {
+  .advantage__number {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) and (min-resolution: $retina-dpi),
+  (max-width: $mobile-width-only) and (min-resolution: $retina-dppx) {
+  .advantage__img--beneficial-nutrients {
+    background-image: url("../img/advantage-beneficial-nutrients@2x.png");
+  }
+
+  .advantage__img--preparation {
+    background-image: url("../img/advantage-preparation@2x.png");
+  }
+
+  .advantage__img--eat {
+    background-image: url("../img/advantage-eat@2x.png");
+  }
+
+  .advantage__img--time {
+    background-image: url("../img/advantage-time@2x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .how-work__wrapper {
+    display: flex;
+    width: 708px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+  }
+
+  .how-work__header {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    flex-basis: 100%;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .advantage {
+    position: relative;
+    flex-basis: 50%;
+    margin-top: 30px;
+    margin-bottom: 105px;
+    padding-right: 90px;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .advantage__img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .advantage__info {
+    margin: 0;
+    margin-top: 35px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.9px;
+  }
+
+  .advantage__number {
+    position: absolute;
+    display: block;
+    top: -40px;
+    left: 125px;
+    font-size: 281px;
+    line-height: 281px;
+    color: $lightgrey;
+    overflow: hidden;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
+  (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+  .advantage__img--beneficial-nutrients {
+    background-image: url("../img/advantage-beneficial-nutrients@2x.png");
+  }
+
+  .advantage__img--preparation {
+    background-image: url("../img/advantage-preparation@2x.png");
+  }
+
+  .advantage__img--eat {
+    background-image: url("../img/advantage-eat@2x.png");
+  }
+
+  .advantage__img--time {
+    background-image: url("../img/advantage-time@2x.png");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how-work__wrapper {
+    width: 1220px;
+    justify-content: space-between;
+  }
+
+  .how-work__header {
+    margin-top: 75px;
+    margin-bottom: 70px;
+  }
+
+  .advantage {
+    flex-basis: 245px;
+    margin-top: 0;
+    margin-bottom: 75px;
+    padding-right: 0;
+  }
+
+  .advantage__info {
+    letter-spacing: 1.5px;
+  }
+}

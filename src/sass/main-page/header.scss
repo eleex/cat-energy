@@ -1,0 +1,136 @@
+.header__logo-wrapper {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: $border-mobile-menu;
+}
+
+.header__img-logo {
+  display: block;
+}
+
+.header__link-mobile-header {
+  align-self: center;
+}
+
+.header__svg-mobile-header {
+  display: block;
+}
+
+.header__open-menu {
+  @include no-outline;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  align-self: center;
+  border: none;
+  background-image: url("../img/open-mobile-menu.svg");
+  background-repeat: no-repeat;
+}
+
+.header__close-menu {
+  @include no-outline;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  align-self: center;
+  border: none;
+  background-image: url("../img/close-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position-x: 3px;
+}
+
+.navigation__menu {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__list {
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: $border-mobile-menu;
+  list-style: none;
+}
+
+.navigation__link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 65px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    width: 708px;
+    margin: 24px auto;
+    justify-content: space-between;
+  }
+
+  .header__logo-wrapper {
+    padding: 0;
+    border: none;
+  }
+
+  .header__link-mobile-header,
+  .header__open-menu {
+    display: none;
+  }
+
+  .header__img-logo {
+    display: block;
+    width: 173px;
+    height: 58px;
+  }
+
+  .navigation {
+    display: block;
+    align-self: center;
+  }
+
+  .navigation__menu {
+    display: flex;
+  }
+
+  .navigation__list {
+    margin-left: 35px;
+    border-bottom: none;
+  }
+
+  .navigation__link {
+    display: block;
+    padding-top: 4px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  .navigation__link.active {
+    border-bottom: 2px solid $bg-lightgreen;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 54px 0 30px;
+  }
+
+  .header__img-logo {
+    width: 202px;
+    height: 59px;
+  }
+
+  .navigation__link {
+    font-size: 20px;
+    line-height: 36px;
+    color: $white;
+  }
+
+  .navigation__link.active {
+    border-bottom: 2px solid $white;
+  }
+}

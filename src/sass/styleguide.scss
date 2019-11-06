@@ -69,7 +69,7 @@
   border: 2px solid #68b738;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .footer__html-academy-wrapper:active .footer__html-academy-svg,
   .footer__html-academy-wrapper:active .footer__html-academy-link {
     opacity: 0.3;
