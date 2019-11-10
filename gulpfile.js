@@ -18,7 +18,7 @@ function clear () {
 }
 
 function style () {
-    return gulp.src('./src/sass/main-page.scss')
+    return gulp.src('./src/sass/*-page.scss')
                 .pipe(sourcemaps.init())
                 .pipe(plumber())
                 .pipe(sass({
@@ -34,7 +34,10 @@ function style () {
                 .pipe(cleanCSS({
                     level: 2
                 }))
-                .pipe(rename('main-page.min.css'))
+                .pipe(rename(function (path) {
+                    path.basename += ".min";
+                    path.extname = ".css";
+                  }))
                 .pipe(gulp.dest('./build/css'))
                 .pipe(browserSync.stream());
 }
