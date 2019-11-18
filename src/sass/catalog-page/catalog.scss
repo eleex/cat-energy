@@ -1,0 +1,60 @@
+.catalog__wrapper{
+  width: 280px;
+  margin: 0 auto;
+}
+
+.catalog__header{
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 103px;
+}
+
+.catalog-item{
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ededed;
+}
+
+.catalog-item__picture,
+.catalog-item__img{
+  display: block;
+}
+
+.catalog-item__description{
+  width: 140px;
+}
+
+.catalog-item__description-link{
+  display: block;
+}
+
+.catalog-item__header{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.catalog-item__size,
+.catalog-item__flavor,
+.catalog-item__price{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444;
+}
+
+.catalog-item__btn{
+  width: 280px;
+  height: 40px;
+  margin-bottom: 25px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #fff;
+  background-color: #68b738;
+  text-transform: uppercase;
+}

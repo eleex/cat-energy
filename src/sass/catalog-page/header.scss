@@ -1,6 +1,11 @@
+header{
+  width: 280px;
+  margin: 0 auto;
+}
+
 .header__logo-wrapper {
   display: flex;
-  padding: 15px 20px;
+  padding: 15px 0;
   justify-content: space-between;
   box-sizing: border-box;
   border-bottom: $border-mobile-menu;
@@ -140,10 +145,5 @@
   .navigation__link {
     font-size: 20px;
     line-height: 36px;
-    color: $white;
-  }
-
-  .navigation__link.active {
-    border-bottom: 2px solid $white;
   }
 }
