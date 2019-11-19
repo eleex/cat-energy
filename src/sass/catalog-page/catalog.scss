@@ -29,7 +29,8 @@
   display: block;
 }
 
-.catalog-item__header{
+.catalog-item__header,
+.catalog-plus-item__header{
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -57,4 +58,20 @@
   color: #fff;
   background-color: #68b738;
   text-transform: uppercase;
+}
+
+.catalog-plus-item{
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog-plus-item__header--number{
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.catalog-plus-item__info{
+  font-size: 12px;
+  line-height: 16px;
+  color: #444;
 }
