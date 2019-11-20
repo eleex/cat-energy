@@ -1,4 +1,4 @@
-header{
+header {
   width: 280px;
   margin: 0 auto;
 }
@@ -48,7 +48,7 @@ header{
   text-transform: uppercase;
 }
 
-@media (max-width: $mobile-width-only){
+@media (max-width: $mobile-width-only) {
   .header__open-menu {
     display: block;
     @include no-outline;
@@ -60,7 +60,7 @@ header{
     background-image: url("../img/open-mobile-menu.svg");
     background-repeat: no-repeat;
   }
-  
+
   .header__close-menu {
     display: block;
     @include no-outline;
@@ -74,7 +74,7 @@ header{
     background-position-x: 3px;
   }
 
-  .display--none{
+  .display--none {
     display: none;
   }
 }
