@@ -194,132 +194,40 @@
 @media (min-width: $desktop-width) {
   .catalog__wrapper{
     width: 1220px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
-    // margin: 0 auto;
   }
   
   .catalog__header{
-    // width: 100%;
-    // margin: 0;
-    // font-size: 60px;
     line-height: 130px;
-    // font-weight: 400;
   }
   
   .catalog-item{
-    // display: flex;
     width: 245px;
-    // margin-top: 140px;
-    // flex-wrap: nowrap;
-    // flex-direction: column;
-    // align-items: center;
-    // border-top: none;
-    // background-color: #f2f2f2;
-  }
-  
-  .catalog-item__picture,
-  .catalog-plus-item__picture,
-  .catalog-item__img,
-  .catalog-plus-item__img{
-    // display: block;
-  }
-
-  .catalog-item__img--500{
-    // margin-top: -46px;
-  }
-
-  .catalog-item__img--1000{
-    // margin-top: -82px;
   }
   
   .catalog-item__description{
     width: 169px;
   }
   
-  .catalog-item__description-link{
-    // display: block;
-  }
-  
   .catalog-item__header,
   .catalog-plus-item__header{
-    // margin-top: 35px;
     padding: 0;
-    // font-size: 20px;
-    // line-height: 20px;
-    // font-weight: 400;
-    // color: #111;
-    // text-align: center;
-    // text-transform: uppercase;
     letter-spacing: -1px;
-  }
-  
-  .catalog-item__size,
-  .catalog-item__flavor,
-  .catalog-item__price{
-    // display: flex;
-    // justify-content: space-between;
-    // font-size: 16px;
-    // line-height: 30px;
-    // color: #444;
-    // border-bottom: 1px solid #cdcdcd;
   }
   
   .catalog-item__btn,
   .catalog-plus-item__btn{
     width: 169px;
-    // height: 40px;
-    // margin-top: 33px;
-    // margin-bottom: 40px;
-    // border: none;
-    // box-sizing: border-box;
-    // font-size: 16px;
-    // color: #fff;
-    // background-color: #68b738;
-    // text-transform: uppercase;
-    // cursor: pointer;
   }
   
   .catalog-plus-item{
-    // display: flex;
     width: 245px;
-    // margin-top: 140px;
-    // flex-direction: column;
-    // align-items: center;
-    // border-top: 1px solid #e6e6e6;
-    // border-bottom: 1px solid #e6e6e6;
-  }
-  
-  .catalog-plus-item__img{
-    // width: 60px;
-    // height: 60px;
-    // margin: 54px 0 15px;
   }
   
   .catalog-plus-item__header{
-    // margin: 0;
     padding: 0 40px;
-  }
-  
-  .catalog-plus-item__header--number{
-    // font-size: 24px;
-    // line-height: 24px;
-    // font-weight: 500;
   }
   
   .catalog-plus-item__info{
-    // margin: 25px 0 20px;
     padding: 0 40px;
-    // font-size: 16px;
-    // line-height: 16px;
-    // color: #444;
-    // text-align: center;
-  }
-  
-  .catalog-plus-item__btn{
-    // margin-top: auto;
-    // color: #444;
-    // background-color: #f2f2f2;
   }
 }
